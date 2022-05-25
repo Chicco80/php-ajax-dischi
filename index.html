@@ -12,10 +12,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app" class="container">
+    <main id="app" class="container">
+        <div class="row">
+            <div class="col-4" v-for="(disco,index) in dischi" :key="index">
+                <div class="card" style="width: 18rem;">
+                    <img src={{disco.poster}} class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{disco.title}}</h5>
+                        <p class="card-text">{{disco.author}}</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
-    </div>
+    </main>
     
 
 
