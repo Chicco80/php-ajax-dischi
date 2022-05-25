@@ -23,7 +23,7 @@ include __DIR__.'./database.php';
         <div class="row">
             <?php foreach($dischi as $disco){ ?>
             <div class="col-3">
-            <div class="card bg debug my-3" style="width: 18rem;">
+            <div class="card bg  my-3" style="width: 18rem;">
                 <img src="<?php echo $disco['poster']?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $disco['title']?></h5>

@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <main id="app" class="container">
+<body class="color">
+    <main id="app" class="container pt-5 mt-5 ">
         <div class="row">
-            <div class="col-4" v-for="(disco,index) in dischi" :key="index">
-                <div class="card" style="width: 18rem;">
-                    <img src={{disco.poster}} class="card-img-top" alt="...">
+            <div class="col-3" v-for="(disco,index) in dischi" :key="index">
+                <div class="card bg my-3" style="width: 18rem;">
+                    <img :src="disco.poster" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{disco.title}}</h5>
                         <p class="card-text">{{disco.author}}</p>
