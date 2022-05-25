@@ -18,7 +18,13 @@ include __DIR__.'./database.php';
     <title>php-ajax-dischi</title>
 </head>
 <body class="color">
-    
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="./img/spotify.png" alt="" width="30" height="24" class="d-inline-block align-text-top spoty">
+            </a>
+        </div>
+    </nav>
     <div class="container pt-5 mt-5">
         <div class="row">
             <?php foreach($dischi as $disco){ ?>
